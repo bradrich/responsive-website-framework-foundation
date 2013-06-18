@@ -1,4 +1,4 @@
-changed-responsive-website-framework
+Responsive Website Framework - Changed
 ====================================
 
 Fully responsive website built off of the Foundation 4 framework.

@@ -1,0 +1,134 @@
+/* ==========================================================================
+   Responsive Design
+   Author: Brad Richardson, Changed
+   ========================================================================== */
+
+/* Large Displays: 1280px - 1440px */
+@media only screen and (max-width: 1440px) {
+    
+    /* Header */
+    .headertopintrocontent { font-size: 1.462em; line-height: 1.75em; }
+    
+}
+
+/* Medium Displays: 1024px - 1279px */
+@media only screen and (max-width: 1279px) {
+    
+    /* Navigation */
+    .navitem { display: none; }
+    .navchangedlogo { right: -230px; width: 1583px; height: 1681px; }
+    .navsearchcontainer { display: none; }
+    .mobilenavmenubutton { display: block; }
+    
+    /* Header */
+    .headertop:before { height: 150px; }
+    .headertopleft { width: 37%; }
+    .headertopright { width: 63%; }
+    .headerchangedman { right: 65%; }
+    .headertopintrocontent { font-size: 1.1em; line-height: 1.5em; }
+    .headerbottom:after { height: 150px; }
+    .headerimginfo, .headerimginfo-small { padding: 0 8px; font-size: 10px; }
+    
+    /* Top Footer */
+    .socialwords { display: none; }
+    
+    /* Bottom Footer */
+    .bottomfooterleft { width: 100%; margin: 0 0 130px 0; }
+    .bottomfooterright { width: 100%; }
+    
+}
+
+/* Small Displays: 768px - 1023px */
+@media only screen and (max-width: 1000px) {
+    
+    /* Navigation */
+    .navchangedlogo { right: -195px; width: 1275px; height: 1354px; }
+    
+    /* Header */
+    .headertop { margin-top: 90px; }
+    .headertopleft { width: 55%; padding: 0 0 25.25% 0; }
+    .headertopright { width: 45%; padding: 0 0 25.25% 0; }
+    .headerchangedman { display: none; }
+    .headertopintroicon { width: 11%; margin: 6.5% 3.5% 0 0; }
+    .headertopintrocontent { width: 73.5%; margin: 7.5% 0 0 0; font-size: 1em; line-height: 1.6em; }
+    .headerbottomleft { width: 50%; margin: -25.25% 0 0 0; }
+    .headerbottomright { width: 50%; }
+    .headerbottomrightimg { width: 50%; }
+    .lasttwo { display: none; }
+    
+    /* Middle */
+    .middlecontentcontainer { width: 100%; margin-left: 0; background: none; }
+    .middlecontent { width: 100%; margin: 0 0 65px 0; }
+    .skillwords { padding: 2px; background: #EFEFEF; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; }
+    
+    /* Top Footer */
+    .blogright { margin: 15px 0 0 0; }
+    .blogrightinner { clear: left; margin-left: 0; font-size: 0.9em; }
+    
+}
+
+/* X-Small Displays: 480px - 767px */
+@media only screen and (max-width: 750px) {
+    
+    /* Containers */
+    .maincolumn { padding-right: 3em; padding-left: 3em; }
+    
+    /* Navigation */
+    .navchangedlogo { top: -15px; right: -140px; width: 1000px; height: 1062px; }
+    .navhome { margin: 0 25px 0 0; }
+    
+    /* Header */
+    .headertop { float: left; position: relative; width: 130%; margin: 90px 0 0 -15%; background: #D60312; z-index: 20; }
+    .headertop:before { display: none; }
+    .headerrightbutton { display: none; }
+    .headertopleft { display: none; }
+    .headertopright { width: 76%; height: auto; margin: 0 12%; padding:0; }
+    .headertopintro { float: left; position: relative; top: 0; width: 100%; height: auto; margin: 0; }
+    .headertopcorner { display: none; }
+    .headertopintrocontent { margin-bottom: 6.5%; font-size: 1.2em; line-height: 2em; }
+    .headerbottom { width: 100%; margin: 40px 0 55px 0; padding: 0; background: none; }
+    .headerbottom:after { display: none; }
+    .headerleftbutton { display: none; }
+    .headerbottomleft { width: 100%; margin: 0; }
+    .headerbottomright { width: 100%; }
+    .headerbottomrightimg { width: 50%; }
+    .headerimg { width: 100%; }
+    
+    /* Top Footer */
+    .topfooterleft { width: 100%; margin: 0 0 50px 0; }
+    .socialwords { display: inline; }
+    .topfooterright { width: 100%; }
+    
+    /* Final */
+    .finalleft, .finalright { width: 100%; text-align: left; }
+    .finalleft { margin-bottom: 20px; }
+    .finalicon { float: right; }
+    
+}
+
+/* XX-Small Displays: 320px - 479px */
+@media only screen and (max-width: 464px) {
+    
+    /* Navigation */
+    .navchangedlogo { right: -120px; width: 700px; height: 743px; }
+    .navhome { display: none; }
+    .mobilenavmenubutton { margin: 0; }
+    
+    /* Header */
+    .headertop { width: 150%; margin: 90px 0 0 -25%; margin-top: 60px; }
+    .headertopright { width: 66%; height: auto; margin: 0 17%; padding:0; }
+    .headertopintroicon { width: 18%; margin: 10% 5% 0 0; }
+    .headertopintrocontent { width: 73.5%; margin: 11.5% 0 10% 0; font-size: 1.2em; }
+    
+    /* Middle */
+    .middleskill { width: 49%; }
+    .smallclearleft { clear: left; }
+    
+    /* Top Footer */
+    .socialwords { display: none; }
+    
+    /* Bottom Footer */
+    .bottomfooterleft { margin: 0 0 35px 0; }
+    .bottomfooterright { display: none; }
+    
+}
