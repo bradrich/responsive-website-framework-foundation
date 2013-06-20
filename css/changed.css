@@ -4,9 +4,24 @@
  * What follows is the additional CSS added by Brad Richardson during the 
  * building of DesignChanged.us.
  */
+ 
+ 
+/* Images */
+img.a { position: absolute; left: 0; top: 0; z-index: 30; }
+img.b { position: absolute; left: 0; top: 0; z-index: 20; }
+img.c { position: absolute; left: 0; top: 0; z-index: 10; display: none; }
+
 
 /* Body */
-body { background: #ffffff; font: normal 400 13px/24px 'Open Sans', Calibri, Arial, sans-serif; }
+body { background: #efefef; font: normal 400 13px/24px 'Open Sans', Calibri, Arial, sans-serif; }
+
+
+/* Headers */
+h1 { font: normal 700 2.7em/1em 'Arimo', Arial, sans-serif; margin: 0 0 40px 0; color: #A9010E; }
+h2 { font: normal 700 2em/1.5em 'Arimo', Arial, sans-serif; margin: 0 0 25px 0; color: #A9010E; }
+
+/* Paragraphs */
+p { font-size: 1.3em; }
 
 
 /* Foundation puts their max-width for a row at 62.5em.  You can download the package at bigger sizes, but I decided to change it here. */
@@ -22,12 +37,7 @@ body { background: #ffffff; font: normal 400 13px/24px 'Open Sans', Calibri, Ari
 /* Miscellaneous */
 .overflowvisible { overflow: visible; }
 .clearleft { clear: left; }
-
-
-/* Images */
-img.a { position: absolute; left: 0; top: 0; z-index: 30; }
-img.b { position: absolute; left: 0; top: 0; z-index: 20; }
-img.c { position: absolute; left: 0; top: 0; z-index: 10; display: none; }
+.capitalize { text-transform: uppercase; }
 
 
 /* Top Anchor */
@@ -101,7 +111,7 @@ img.c { position: absolute; left: 0; top: 0; z-index: 10; display: none; }
 /* ----- Middle Header Top */
 /*.headertop { float: left; position: relative; width: 100%; margin: 140px 0 0 0; z-index: 20; }*/
 .headertop { float: left; position: relative; width: 104%; margin: 140px 0 0 -2%; z-index: 20; }
-.headertop:before { position: absolute; top: 0; right: 98%; width: 9999px; height: 200px; background: #D60312; content: ""; z-index: 20; }
+.headertop:before { position: absolute; top: 0; right: 98%; width: 9999px; height: 300px; background: #D60312; content: ""; z-index: 20; }
 .headerrightbutton { position: absolute; top: 70px; right: -35px; width: 36px; height: 61px; z-index: 20; }
 .headertopleft { float: left; width: 35.5%; height: 100%; padding: 0 0 14% 0; background: #D60312; border-top-right-radius: 10px; -webkit-border-top-right-radius: 10px; -moz-border-radius-topright: 10px; }
 .headertopright { float: left; position: relative; width: 64.5%; height: 100%; padding: 0 0 14% 0; z-index: 20; }
@@ -114,11 +124,11 @@ img.c { position: absolute; left: 0; top: 0; z-index: 10; display: none; }
 /* ----- Middle Header Bottom */
 /*.headerbottom { float: left; position: relative; width: 100%; margin-bottom: 55px; padding: 0 3em 40px 3em; background: #D60312;  border-bottom-left-radius: 10px; -webkit-border-bottom-left-radius: 10px; -moz-border-radius-bottomleft: 10px; z-index: 20; }*/
 .headerbottom { float: left; position: relative; width: 104%; margin: 0 0 55px -2%; padding: 0 3em 40px 3em; background: #D60312; border-bottom-left-radius: 10px; -webkit-border-bottom-left-radius: 10px; -moz-border-radius-bottomleft: 10px; z-index: 20; }
-.headerbottom:after { position: absolute; bottom: 0; left: 98%; width: 9999px; height: 200px; background: #D60312; content: ""; z-index: 20; }
+.headerbottom:after { position: absolute; bottom: 0; left: 98%; width: 9999px; height: 300px; background: #D60312; content: ""; z-index: 20; }
 .headerleftbutton { position: absolute; bottom: 35px; left: -36px; width: 36px; height: 61px; z-index: 20; }
-.headerbottomleft { float: left; position: relative; width: 31%; margin: -13.75% 0 0 0; z-index: 30; }
+.headerbottomleft { float: left; position: relative; left: 9999px; width: 31%; margin: -13.75% 0 0 0; z-index: 30; }
 .headerbottomright { float: left; width: 69%; }
-.headerbottomrightimg { float: left; position: relative; width: 25%; z-index: 30; }
+.headerbottomrightimg { float: left; position: relative; left: 9999px; width: 25%; z-index: 30; }
 .headerimg { width: 100%; }
 .headerimginfo, .headerimginfo-other, .headerimginfo-small { position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; padding: 0 15px; color: #ffffff; font-size: 12px; line-height: 29px; z-index: 40; }
 .headerimginfo-small { height: 30px; z-index: 50; }
@@ -187,6 +197,13 @@ img.c { position: absolute; left: 0; top: 0; z-index: 10; display: none; }
 .middlebutton { float: left; width: 100%; margin-top: 60px; padding: 15px 56px 15px 25px; background: #D60312 url('../img/Arrow.png') no-repeat center right; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; font: normal 700 1.3em/2em 'Arimo', Arial, sans-serif; color: #FFFFFF; text-transform: uppercase; }
 .middlebutton:hover { color: #FFFFFF; }
 
+/* Sub Middle Content */
+.middleleft-sub { float: left; width: 67.5%; margin: 100px 5.5% 100px 0; color: #A9010E; }
+/* Sub Middle Side */
+.middleright-sub { float: right; width: 27%; margin: 176px 0 100px 0; }
+.side-sub { float: left; position: relative; width: 100%; min-height: 210px; margin: 0 0 40px 0; padding: 30px; background: #D60312; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; z-index: 60; }
+.side-sub:after { position: absolute; bottom: 0; left: 92%; width: 9999px; height: 200px; background: #D60312; content: ""; z-index: 20; }
+
 
 /* Top Footer */
 .topfooterbackground { position: relative; padding: 65px 0 70px 0; /*height: 285px;*/ background: #d60312; z-index: 60; }
@@ -206,6 +223,16 @@ img.c { position: absolute; left: 0; top: 0; z-index: 10; display: none; }
 .blogright { float: left; width: 100%; /*height: 100%;*/ margin: -7px 0 0 -213px; padding-right: 3em; color: #ffffff; }
 .blogrightinner { float: left; margin-left: 213px; font-size: 1.1em; }
 .blogtitle { margin: 0; font: normal 700 1.4em/1.7em 'Arimo', Arial, sans-serif; color: #ffffff; text-transform: uppercase; }
+
+/* Sub Top Footer */
+.topfooter-sub { position: relative; background: #D60312; z-index: 60; }
+.topfooterleft-sub { float: left; width: 50%; padding: 15px 0 14px; background: url('../img/ChangedLogoLinesSub.jpg') no-repeat top right; }
+.toplink { float: left; width: 30px; height: 30px; margin: 0 53px 0 0; padding: 7px 7px 8px 7px; background: #b90111; border-radius: 7px; -moz-border-radius: 7px; -webkit-border-radius: 7px; }
+.toplink img { vertical-align: top; }
+.topfooterright-sub { float: right; width: 50%; padding: 15px 0 14px; }
+.socialelement-sub { float: right; margin: 1px 0 1px 20px; }
+.socialmenu-sub { display: none; float: right; margin: 0 0 0 24px; padding: 0 9px 0 7px; font: normal 700 1.1em/30px 'Arimo', Arial, Sans-Serif; color: #ffffff; text-decoration: none; text-transform: uppercase; border-radius: 7px; -moz-border-radius: 7px; -webkit-border-radius: 7px; }
+.socialmenu-sub:hover { color: #ffffff; }
 
 
 /* Bottom Footer */

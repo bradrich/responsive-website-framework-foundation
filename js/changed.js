@@ -21,14 +21,14 @@
         // __________________________________________ //
         
         // Nav home button
-        $('.navhome').hover(function(){
+        $('.buttonhover').hover(function(){
             $(this).stop().animate({ backgroundColor: '#A9010E' }, 600);
         }, function(){
             $(this).stop().animate({ backgroundColor: '#b90111' }, 300);
         });
         
         // Nav items
-        $('.navitem').hover(function(){
+        $('.navbuttonhover').hover(function(){
             $(this).stop().animate({ backgroundColor: '#A9010E' }, 600);
         }, function(){
             $(this).stop().animate({ backgroundColor: '#D60312' }, 300);
@@ -54,12 +54,34 @@
         // ----- Header Gallery Effects ----- //
         // __________________________________ //
         
+        // Animate on visible
+        var win = $(window);
+        //var detectPartial = $('#detect_type').val() == 'partial';
+        var headerRightImages = $('.headerbottomrightimg');
+        var headerAnimateDelay = 300;
+        
+        /*win.scroll(function(event) {
+            if($('.headerbottom').visible(true)){*/
+                // Ease in big image
+                $('.headerbottomleft').delay(headerAnimateDelay).animate({ left: '0px' }, 1200, 'easeOutQuart');
+                
+                // Ease in small images
+                headerRightImages.each(function(i, el){
+                    var el = $(el);
+                    headerAnimateDelay = headerAnimateDelay + 200;
+                    el.delay(headerAnimateDelay).animate({ left: '0px' }, 1200, 'easeOutQuart');
+                });
+            /*}
+        });*/
+        
+        // Big left image color bar hover effect
         $('.headerbottomleft').hover(function(){
             $('.headerimginfo').stop().animate({ height: '50px' }, 200);
         }, function(){
             $('.headerimginfo').stop().animate({ height: '30px' }, 100);
         });
         
+        // Small right color bar hover effects
         $('.headerbottomrightimg').hover(function(){
             $(this).find('.headerimginfo-other').stop().animate({ height: '30px' }, 200);
         }, function(){
@@ -84,6 +106,13 @@
         }, function(){
             $(this).stop().animate({ backgroundColor: '#D60312' }, 300);
         });
+        
+        
+        // ******************************* //
+        // ----- Button Hover Effect ----- //
+        // _______________________________ //
+        
+        $('.backtotop').localScroll();
         
     });
     
